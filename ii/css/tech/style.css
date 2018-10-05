@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body, html {
+	background: #23a8e1;
+	font-family: "PT Sans", sans-serif;
+	height: 100vh;
+}
+
+.timeout {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.timeout__text {
+	color: white;
+	width: 450px;
+	margin-left: 20px;
+}
+
+.timeout__text-title {
+	font-size: 49px;
+	font-weight: bold;
+}
+
+.timeout__text-content {
+	font-size: 22px;
+	margin-top: 30px;
+}
+
+
+@media all and (max-width: 900px) {
+	.timeout {
+		flex-flow: column-reverse;
+	}
+	.timeout__img img{
+		height: 65vh;
+	}
+	.timeout__text {
+		width: 100vw;
+		margin: 30px 30px 0;
+	}
+	.timeout__text-title {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.timeout__text-content {
+		font-size: 16px;
+		margin: 15px 20px 0;
+		text-align: center;
+	}
+}
